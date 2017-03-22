@@ -1,0 +1,127 @@
+db.weather.insert({
+	"location" : "Katubedda",
+	"temperature" : "21",
+	"weatherType" : "Clear",
+	"cloudType" : "None",
+	"windType" : "Moderate"
+},
+{
+	"location" : "Kaduwela",
+	"temperature" : "21",
+	"weatherType" : "About to Rain",
+	"cloudType" : "Moderate",
+	"windType" : "Normal"
+},
+{
+	"location" : "Moratuwa",
+	"temperature" : "20",
+	"weatherType" : "Rain",
+	"cloudType" : "Cloudy",
+	"windType" : "Moderate"
+},
+{
+	"location" : "Battaramulla",
+	"temperature" : "22",
+	"weatherType" : "Sunny",
+	"cloudType" : "None",
+	"windType" : "Moderate"
+},
+{
+	"location" : "Kandy",
+	"temperature" : "15",
+	"weatherType" : "About to Rain",
+	"cloudType" : "Cloudy",
+	"windType" : "Heavy"
+},
+{
+	"location" : "Galle",
+	"temperature" : "19",
+	"weatherType" : "About to Rain",
+	"cloudType" : "Cloudy",
+	"windType" : "Moderate"
+},
+{
+	"location" : "Gampaha",
+	"temperature" : "22",
+	"weatherType" : "Sunny",
+	"cloudType" : "None",
+	"windType" : "None"
+},
+{
+	"location" : "Bambalapitiya",
+	"temperature" : "19",
+	"weatherType" : "About to Rain",
+	"cloudType" : "Moderate",
+	"windType" : "None"
+},
+{
+	"location" : "Monaragala",
+	"temperature" : "26",
+	"weatherType" : "Sunny",
+	"cloudType" : "None",
+	"windType" : "None"
+},
+{
+	"location" : "Kadawatha",
+	"temperature" : "22",
+	"weatherType" : "Sunny",
+	"cloudType" : "None",
+	"windType" : "None"
+},
+{
+	"location" : "Hambantota",
+	"temperature" : "27",
+	"weatherType" : "Sunny",
+	"cloudType" : "None",
+	"windType" : "None"
+},
+{
+	"location" : "Kottawa",
+	"temperature" : "19",
+	"weatherType" : "Rain",
+	"cloudType" : "Moderate",
+	"windType" : "Moderate"
+},
+{
+	"location" : "Piliyandala",
+	"temperature" : "23",
+	"weatherType" : "Sunny",
+	"cloudType" : "None",
+	"windType" : "None"
+},
+{
+	"location" : "Ratmalana",
+	"temperature" : "21",
+	"weatherType" : "Sunny",
+	"cloudType" : "None",
+	"windType" : "None"
+},
+{
+	"location" : "Anuradhapura",
+	"temperature" : "26",
+	"weatherType" : "Sunny",
+	"cloudType" : "None",
+	"windType" : "None"
+},
+{
+	"location" : "Minneriya",
+	"temperature" : "24",
+	"weatherType" : "Sunny",
+	"cloudType" : "None",
+	"windType" : "None"
+},
+{
+	"location" : "Elpitiya",
+	"temperature" : "19",
+	"weatherType" : "Sunny",
+	"cloudType" : "Moderate",
+	"windType" : "None"
+},
+{
+	"location" : "Hikkaduwa",
+	"temperature" : "20",
+	"weatherType" : "Sunny",
+	"cloudType" : "None",
+	"windType" : "Moderate"
+}
+);
