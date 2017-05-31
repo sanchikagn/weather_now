@@ -1,0 +1,54 @@
+<header class="header">
+<div class="app flex-row align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card-group mb-0">
+                    <div class="card p-2" >
+                        <form name="myForm" novalidate>
+                        <div class="card-block">
+                            <div class="card-block row">
+                                <button type="button" class="btn btn-outline-primary btn-lg active col-lg-6">Sign Up</button>
+                                <button type="button" ui-sref="appSimple.login" class="btn btn-outline-secondary btn-lg col-lg-6">Login</button>
+                            </div>
+                            
+                            <h1 class="text-muted">Sign Up for Free</h1>
+                            <div class="input-group mb-1">
+                                <span class="input-group-addon"><i class="icon-user"></i>
+                                </span>
+                                <input type="text" class="form-control" ng-model="details.username" name="username" placeholder="First Name" required>
+                                <span style="color:red" ng-show="myForm.username.$dirty && myForm.username.$error.required">Username is required</span>
+                            </div>
+                            <div class="input-group mb-1">
+                               <span class="input-group-addon"><i class="icon-user"></i>
+                                </span>
+				                <input type="text" name= "email" class="form-control" ng-model="details.email" placeholder="User email" required>
+								<span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+								<span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+								        <span ng-show="myForm.email.$error.required"> Email is required. </span>
+								        <span ng-show="myForm.email.$error.email"> Email is invalid. </span>
+                                    </span></span>
+                            </div>
+                             <div class="input-group mb-1">
+                            <span class="input-group-addon"><i class="icon-lock"></i>
+                            </span>
+                            <input type="password" class="form-control"  ng-model="details.password" id="psw" name="psw" placeholder="Password" ng-minlength="4"  ng-maxlength="14" required>
+                                <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$error.required">Password is required</span>
+                                <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$error.password">Invalid password</span>
+                                <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$error.minlength">Too short</span>
+					           <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$error.maxlength">Too long</span>
+                        </div>
+                            <div class="row">
+                                <div class="col-3">
+                                      <button ng-click="register()" type="button"  ng-disabled="myForm.$invalid" class="btn btn-primary px-2">Sign Up</button>
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</header>

@@ -1,0 +1,39 @@
+<header class="app-header navbar">
+    <ul class="nav navbar-nav hidden-md-down">
+        <li class="nav-item">
+            
+        </li>
+
+        <li class="nav-item px-1">
+            <a class="nav-link" ui-sref-active="active" ui-sref="app.map">Map</a>
+        </li>
+        <li class="nav-item px-1">
+            <a class="nav-link" ui-sref-active="active" ui-sref="app.weatherUpdate">Weather Update</a>
+        </li>
+        <li class="nav-item px-1">
+            <a class="nav-link" ui-sref-active="active" ui-sref="app.ranking">Ranking</a>
+        </li>
+        <li class="nav-item px-1">
+            <a class="nav-link" ui-sref-active="active" ui-sref="app.aboutUs">About Us</a>
+        </li>
+    </ul>
+    <ul class="nav navbar-nav ml-auto hidden-md-down">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="hidden-md-down">{{username}}</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+
+                <div class="dropdown-header text-center">
+                    <strong>Account</strong>
+                </div>
+                <a class="dropdown-item" ui-sref="app.profile"><i class="fa fa-user"></i> Profile</a>
+                <a class="dropdown-item" ng-click="logout()"><i class="fa fa-lock"></i> Logout</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            
+        </li>
+
+    </ul>
+</header>

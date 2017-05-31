@@ -1,0 +1,147 @@
+<div class="col-md-10" style="padding-left:150px">
+    <div class="card card-inverse card-info">
+
+        <div class="card-header">
+            <b><h2>  Update Your Weather status </h2></b>
+        </div>
+
+        <div class="card-block">
+            <div class="card-block" ng-controller="weatherUpdateController">
+                <hr>
+                <form name="Form" novalidate>
+                    <fieldset class="radio group" >
+                        <div class="form-group row">
+                            <label class="col-md-12 form-control-label" ><center><u>Weather Type</u></center></label>
+                            <div class="col-md-4">
+                                <center>
+                                    <label for="sunny">
+                                        <input type="radio" ng-model="weather.weather" name="radio1" value="Sunny" ng-required="!radio1"><br>Sunny
+                                    </label>
+                                </center>
+                            </div>
+
+                            <div class="col-md-4">
+                                <center>
+                                    <label for="rainy">
+                                        <input type="radio" ng-model="weather.weather" name="radio1" value="Rain" ng-required="!radio1"><br>Rain
+                                    </label>
+                                </center>
+                            </div>
+
+                            <div class="col-md-4">
+                                <center>
+                                    <label for="aboutToRainy">
+                                        <input type="radio" ng-model="weather.weather" name="radio1" value="AboutToRain" ng-required="!radio1"><br>About to rain
+                                    </label>
+                                </center>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <hr>
+                    <fieldset class="radio group">
+                        <div class="form-group row">
+                            <label class="col-md-12 form-control-label" ><center><u>Cloud Type</u></center></label>
+
+                            <div class="col-md-4">
+                                <center>
+                                    <label for="cloudy">
+                                        <input type="radio" ng-model="weather.cloud" name="radio2" value="Cloudy" ng-required="!radio2"><br>Cloudy
+                                    </label>
+                                </center>
+                            </div>
+
+                            <div class="col-md-4">
+                                <center>
+                                    <label for="moderate">
+                                        <input type="radio" ng-model="weather.cloud" name="radio2" value="Moderate" ng-required="!radio2"><br>Moderate
+                                    </label>
+                                </center>
+                            </div>
+
+                            <div class="col-md-4">
+                                <center>
+                                    <label for="noClouds">
+                                        <input type="radio" ng-model="weather.cloud" name="radio2" value="NoClouds" ng-required="!radio2"><br>No Clouds
+                                    </label>
+                                </center>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <hr>
+                    <fieldset class="radio group">
+                        <div class="form-group row">
+                            <label class="col-md-12 form-control-label" ><center><u>Wind Type</u></center></label>
+
+                            <div class="col-md-4">
+                                <center>
+                                    <label for="heavy">
+                                        <input type="radio" ng-model="weather.wind"  name="radio3" value="Heavy" ng-required="!radio3"><br>Heavy
+                                    </label>
+                                </center>
+                            </div>
+
+                            <div class="col-md-4">
+                                <center>
+                                    <label for="normal">
+                                        <input type="radio" ng-model="weather.wind"  name="radio3" value="Normal" ng-required="!radio3"><br>Normal
+                                    </label>
+                                </center>
+                            </div>
+
+                            <div class="col-md-4">
+                                <center>
+                                    <label for="none">
+                                        <input type="radio" ng-model="weather.wind" name="radio3" value="None" ng-required="!radio3"><br>None
+                                    </label>
+                                </center>
+                            </div>
+
+                        </div>
+                    </fieldset>
+                    <hr>
+                    <form name="searchForm" novalidate ng-submit="search()">
+                        <div class="input-group">
+                            <label>Location name</label>
+                            <input name="place" id="place" type="text" class="form-control" placeholder="Enter_your_current_location" ng-model="searchPlace" required autofocus />
+                            <span style="color:red" ng-show="Form.place.$dirty && Form.place.$error.required">Location is required</span>
+                        </div>
+                    </form>
+                    <div class="form-group">
+                        <div class="col-xs-6">
+                            <input name="resName" type="hidden" class="form-control" ng-model="weather.location" disabled />
+                        </div>
+                    </div>
+
+                    <!--get latitude-->
+                    <div class="form-group">
+                        <div class="col-xs-6">
+                            <input name="resLat" type="hidden" class="form-control" ng-model="weather.latitude" disabled />
+                        </div>
+                    </div>
+
+                    <!--longitude-->
+                    <div class="form-group">
+                        <div class="col-xs-8">
+                            <input name="resLng" type="hidden" class="form-control" ng-model="weather.longitude" disabled />
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="card-block">
+                            <button ng-click="update()" type="button" ng-disabled="Form.$invalid" class="btn btn-primary btn-lg btn-block">Update</button>
+                        </div>
+                    </div>
+                </form>
+                <div id="map" style="width:0px; height:0px;"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+

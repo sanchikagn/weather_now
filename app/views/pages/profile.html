@@ -1,0 +1,50 @@
+<div class="card" ng-controller="profileController">
+    <div class="card-block">
+        <form action="" method="get">
+            <div class="card-header">
+                User profile
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon col-sm-3">User Name</span>
+                            <input type="text" id="username" name="username" ng-model="profile.username" class="form-control" disabled>
+                            <span class="input-group-addon"><i class="fa fa-user"></i>
+                                </span>
+                        </div>
+                    </div>
+                    </div>
+
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon col-sm-3">Accurate Updates</span>
+                            <input type="text" id="accuupdates" name="accuupdates" ng-model="profile.accurateUpdates" class="form-control" disabled>
+                            <span class="input-group-addon"><i class="fa fa-user"></i>
+                                </span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon col-sm-3">Total Updates</span>
+                            <input type="text" id="totalupdates" name="totalupdates" ng-model="profile.totalUpdates" class="form-control" disabled>
+                            <span class="input-group-addon"><i class="fa fa-user"></i>
+                                </span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon col-sm-3">Score</span>
+                            <input type="text" id="score" name="score" ng-model="profile.rate" class="form-control" disabled>
+                            <span class="input-group-addon"><i class="fa fa-user"></i>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>

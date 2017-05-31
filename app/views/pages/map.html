@@ -1,0 +1,80 @@
+<div class="animated fadeIn" ng-controller="mapController">
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="alert alert-danger text-center" role="alert" ng-show="apiError">
+                        <b>API Error : </b>
+                        <span>{{ apiStatus }}</span>
+                    </div>
+					<div class="row offset-lg-2">
+					<div class="col-lg-8 ">
+                    <form name="searchForm" novalidate ng-submit="search()" >
+                        <div class="input-group">
+                            <input name="place" type="text" class="form-control" ng-model="searchPlace" required autofocus />
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" ng-disabled="searchForm.$invalid">Search</button>
+                            </span>
+                        </div>
+				    </form>
+					</div>
+					</div>
+					<div class="row offset-lg-2">
+					<div id="map"class="col-lg-4"></div>
+                    <div class="col-lg-4 "style="padding-top:35px">
+					<form name="resForm" class="form-horizontal" novalidate >
+                     <span class="input-group-btn">
+                                <button class="btn btn-primary" ng-click="send(place)">Get Weather</button>
+                            </span>
+					<div class="form-group">
+						<label for="resName" class="col-xs-2 control-label" >Name</label>
+						<div class="col-xs-10">
+							<input name="resName" type="text" class="form-control" ng-model="place.location" disabled />
+						</div>
+					</div>
+					<div class="form-group">
+						
+						<div class="col-xs-10">
+							<input name="resLat" type="hidden" class="form-control" ng-model="place.latitude" disabled />
+						</div>
+								</div>
+					<div class="form-group">
+						
+						<div class="col-xs-10">
+							<input name="resLng" type="hidden" class="form-control" ng-model="place.longitude" disabled />
+						</div>
+					</div>
+ 			        <div class="form-group">
+                        <lable for="resLng" class="col-xs-2 control-label">Temperature</lable>
+                        <div class="col-xs-10">
+                            <input name="resLng" type="text" class="form-control" ng-model="weather.temperature" disabled/>
+                        </div>
+                    </div>        
+                    <div class="form-group">
+                        <lable for="resLng" class="col-xs-2 control-label">Cloud</lable>
+                        <div class="col-xs-10">
+                            <input name="resLng" type="text" class="form-control" ng-model="weather.cloud" disabled/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <lable for="resLng" class="col-xs-2 control-label">Wind</lable>
+                        <div class="col-xs-10">
+                            <input name="resLng" type="text" class="form-control" ng-model="weather.wind" disabled/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <lable for="resLng" class="col-xs-2 control-label">Weather</lable>
+                        <div class="col-xs-10">
+                            <input name="resLng" type="text" class="form-control" ng-model="weather.weather" disabled/>
+                        </div>
+                    </div> 
+					</form>
+                    </div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    

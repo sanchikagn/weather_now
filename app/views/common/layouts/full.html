@@ -1,0 +1,35 @@
+<!-- Navbar -->
+<div ng-include="'views/common/navbar.html'"></div>
+
+<div class="app-body">
+    
+
+    <!-- Main content -->
+    <main class="main">
+
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb" breadcrumb>
+            <ncy-breadcrumb></ncy-breadcrumb>
+
+            <!-- Breadcrumb Menu-->
+            <li class="breadcrumb-menu">
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    
+                </div>
+            </li>
+
+        </ol>
+
+        <div class="container-fluid">
+            <ui-view></ui-view>
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+
+
+    
+
+</div>
+
+<!-- Footer -->
+<div ng-include="'views/common/footer.html'"></div>
